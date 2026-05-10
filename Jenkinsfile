@@ -51,9 +51,8 @@ pipeline {
 
         stage('Stage 6: Deploy to K8s') {
             steps {
-                bat "set KUBECONFIG=C:\\Users\\melis\\.kube\\config"
-                bat "kubectl apply -f deployment.yaml"
-                bat "kubectl apply -f service.yaml"
+                bat "set KUBECONFIG=C:\\Users\\melis\\.kube\\config && kubectl apply -f deployment.yaml"
+                bat "set KUBECONFIG=C:\\Users\\melis\\.kube\\config && kubectl apply -f service.yaml"
             }
         }
 
