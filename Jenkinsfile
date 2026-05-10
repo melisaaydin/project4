@@ -49,6 +49,14 @@ pipeline {
             }
         }
 
+        stage('Stage 6: Deploy to K8s') {
+            steps {
+                bat "set KUBECONFIG=C:\\Users\\melis\\.kube\\config"
+                bat "kubectl apply -f deployment.yaml"
+                bat "kubectl apply -f service.yaml"
+            }
+        }
+
         stage('Deploy to K8s') {
             steps {
                 bat '''
@@ -57,6 +65,7 @@ pipeline {
                 '''
             }
         }
+
     }
 
     post {
