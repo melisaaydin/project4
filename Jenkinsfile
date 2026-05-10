@@ -15,6 +15,7 @@ pipeline {
         stage('Stage 1: Clone') {
             steps {
                 git branch: 'main',
+                    credentialsId: 'github-credentials',
                     url: 'https://github.com/melisaaydin/project4.git'
             }
         }
