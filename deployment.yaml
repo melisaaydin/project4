@@ -11,16 +11,12 @@ spec:
       app: project4
   template:
     metadata:
-      name: project4
       labels:
         app: project4
     spec:
       containers:
         - name: project4
           image: melay/project4:latest
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
             - containerPort: 8090
-              protocol: TCP
-      restartPolicy: Always
-      
