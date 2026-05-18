@@ -32,7 +32,7 @@ public class HelloController {
                 "</head>" +
                 "<body>" +
                 "    <div class='container'>" +
-                "        <h1>Hospital Intelligence & Medical Controller </h1>" +
+                "        <h1>Hospital Intelligence & Medical Controller.. </h1>" +
                 "        " +
                 "        " +
                 "        <div class='status-panel'>" +
