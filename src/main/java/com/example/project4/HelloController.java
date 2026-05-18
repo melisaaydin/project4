@@ -12,7 +12,7 @@ public class HelloController {
                 "<html>" +
                 "<head>" +
                 "    <meta charset='UTF-8'>" +
-                "    <title>Medical AI & Hospital Management System</title>" +
+                "    <title>Medical & Hospital Management System</title>" +
                 "    <style>" +
                 "        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f6f8fa; color: #24292e; margin: 0; padding: 20px; }" +
                 "        .container { max-width: 1200px; margin: 0 auto; }" +
@@ -32,14 +32,14 @@ public class HelloController {
                 "</head>" +
                 "<body>" +
                 "    <div class='container'>" +
-                "        <h1>Hospital Intelligence & Medical AI Controller <span class='badge'>K8s Active</span></h1>" +
+                "        <h1>Hospital Intelligence & Medical Controller </h1>" +
                 "        " +
                 "        " +
                 "        <div class='status-panel'>" +
                 "            <div class='status-item'>Active Staff<span>14</span></div>" +
                 "            <div class='status-item'>Medical Departments<span>4</span></div>" +
-                "            <div class='status-item'>AI Diagnosis Rate<span>98.4%</span></div>" +
-                "            <div class='status-item'>Cluster Infrastructure<span>Kubernetes (Minikube)</span></div>" +
+                "            " +
+                "            " +
                 "        </div>" +
                 "        " +
                 "        " +
@@ -53,12 +53,12 @@ public class HelloController {
                 "        </table>" +
                 "        " +
                 "        " +
-                "        <h2>Medical & AI Laboratory Staff Members</h2>" +
+                "        <h2>Medical & Laboratory Staff Members</h2>" +
                 "        <table>" +
                 "            <tr><th>Staff ID</th><th>Name</th><th>Role / Job Title</th><th>Hire Date</th><th>Salary / Funding</th><th>Dept No</th></tr>" +
                 "            <tr><td>7839</td><td>DR. KING</td><td>CHIEF OF MEDICINE (President)</td><td>1981-11-17</td><td>$5,000</td><td>10</td></tr>" +
                 "            <tr><td>7566</td><td>DR. JONES</td><td>CLINICAL MANAGER (Manager)</td><td>1981-04-02</td><td>$2,975</td><td>20</td></tr>" +
-                "            <tr><td>7788</td><td>DR. SCOTT</td><td>MEDICAL AI ANALYST (Analyst)</td><td>1982-12-09</td><td>$3,000</td><td>20</td></tr>" +
+                "            <tr><td>7788</td><td>DR. SCOTT</td><td>MEDICAL ANALYST (Analyst)</td><td>1982-12-09</td><td>$3,000</td><td>20</td></tr>" +
                 "            <tr><td>7902</td><td>DR. FORD</td><td>BIOMEDICAL ANALYST (Analyst)</td><td>1981-12-03</td><td>$3,000</td><td>20</td></tr>" +
                 "            <tr><td>7698</td><td>DR. BLAKE</td><td>RESEARCH LEADER (Manager)</td><td>1981-05-01</td><td>$2,850</td><td>30</td></tr>" +
                 "            <tr><td>7782</td><td>DR. CLARK</td><td>OPERATIONS MANAGER (Manager)</td><td>1981-06-09</td><td>$2,450</td><td>10</td></tr>" +
