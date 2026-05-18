@@ -7,11 +7,10 @@ pipeline {
     }
 
     triggers {
-        githubPush()
+        githubPush() // GitHub webhook tetiklemesi için (İster PS1)
     }
 
     stages {
-
         stage('Stage 1: Clone') {
             steps {
                 git branch: 'main',
@@ -52,24 +51,22 @@ pipeline {
 
         stage('Stage 6: Deploy to K8s') {
             steps {
-                bat "set KUBECONFIG=C:\\Users\\melis\\.kube\\config && kubectl apply -f deployment.yaml"
-                bat "set KUBECONFIG=C:\\Users\\melis\\.kube\\config && kubectl apply -f service.yaml"
-            }
-        }
 
-        stage('Deploy to K8s') {
-            steps {
                 bat '''
                 set KUBECONFIG=C:\\Users\\melis\\.kube\\config
                 kubectl apply -f deployment.yaml
+                kubectl apply -f service.yaml
                 '''
             }
         }
-
     }
 
     post {
-        success { echo 'Pipeline BASARILI!' }
-        failure { echo 'Pipeline BASARISIZ!' }
+        success {
+            echo 'Pipeline BASARILI!'
+        }
+        failure {
+            echo 'Pipeline BASARISIZ!'
+        }
     }
 }
